@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <CheckBox
+            android:id="@+id/enabledCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Channel Enabled" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name (max 7 chars)"
+            android:maxLength="7"
+            android:layout_marginTop="8dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/rxFreqInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="RX Frequency (MHz), e.g. 146.940"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="8dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txFreqInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TX Frequency (MHz), e.g. 146.340"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="8dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/rxToneInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="RX CTCSS tone (Hz), blank = none"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="8dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txToneInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TX CTCSS tone (Hz), blank = none"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <Spinner
+                android:id="@+id/powerSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/bandwidthSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

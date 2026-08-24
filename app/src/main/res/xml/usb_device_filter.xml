@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Vendor/Product IDs for the USB-to-serial chipsets most commonly bundled
+  with cheap ham radio programming cables (Baofeng/Kenwood-clone K-connector
+  cables in particular). This list only affects the "open app on device
+  plugged in" prompt , the app also lets the user pick a device manually
+  from Settings, so an unlisted cable still works.
+-->
+<resources>
+    <!-- CH340 / CH341 (WCH) -->
+    <usb-device vendor-id="6790" product-id="29987" />
+    <!-- PL2303 (Prolific) -->
+    <usb-device vendor-id="1659" product-id="8963" />
+    <!-- CP2102 / CP210x (Silicon Labs) -->
+    <usb-device vendor-id="4292" product-id="60000" />
+    <!-- FTDI FT232 -->
+    <usb-device vendor-id="1027" product-id="24577" />
+</resources>

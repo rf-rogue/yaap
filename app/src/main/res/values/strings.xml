@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">YAAP</string>
+    <string name="select_radio">Select Radio Model</string>
+    <string name="connect">Connect</string>
+    <string name="read_from_radio">Read From Radio</string>
+    <string name="write_to_radio">Write To Radio</string>
+    <string name="export_csv">Export CSV</string>
+    <string name="import_csv">Import CSV</string>
+    <string name="no_channels_yet">No channels loaded. Connect a radio and tap \"Read From Radio\", or import a CSV backup.</string>
+</resources>
